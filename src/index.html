@@ -14,24 +14,29 @@
     <!-- <link rel="stylesheet" href="css/styles.css" /> -->
     <link rel="stylesheet" href="css/custom.css" />
   </head>
-  <body>
+  <body id="body">
     <div class="p-5 mx-auto my-4 max-w-7xl">
       <h1 class="p-4 my-2 text-5xl text-center md:text-7xl color-primary">
         ¿Quieres ser mi novia?
       </h1>
-      <button
-        class="w-32 p-3 mx-2 my-2 font-bold neomorfismo-button md:p-4 md:my-4 md:w-40 md:text-lg md:mx-4 color-primary hover:bg-pink-400 hover:text-white"
-      >
-        SI
-      </button>
-      <button
-        class="w-32 p-4 mx-2 my-2 font-bold neomorfismo-button md:p-4 md:my-4 md:w-40 md:text-lg md:mx-4 color-primary hover:bg-pink-400 hover:text-white"
-      >
-        NO
-      </button>
+
       <div
-        class="p-4 my-10 contenedor-eleccion contenedor-neomorfismo max-w-7xl h-96"
-      ></div>
+        class="flex items-center justify-center p-4 my-10 contenedor-neomorfismo max-w-7xl h-96"
+        id="contenedor-eleccion"
+      >
+        <button
+          class="w-32 p-3 mx-2 my-2 font-bold transition duration-500 transform hover:scale-110 neomorfismo-button md:p-4 md:my-4 md:w-40 md:text-lg md:mx-4 color-primary hover:bg-pink-400 hover:text-white"
+        >
+          SI
+        </button>
+        <button
+          class="w-32 p-3 mx-2 my-2 font-bold transition duration-500 transform hover:scale-110 neomorfismo-button md:p-4 md:my-4 md:w-40 md:text-lg md:mx-4 color-primary hover:bg-pink-400 hover:text-white"
+          id="btn-no"
+        >
+          NO
+        </button>
+      </div>
     </div>
+    <script src="js/index.js"></script>
   </body>
 </html>
